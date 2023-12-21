@@ -89,7 +89,7 @@ export default {
                         } catch (connectError) {
                             return new Response(connectError.message, { status: 500 });
                         }
-                    case `/${userID}`: {
+                    case `/${userID}`: case '/cc98myhome': {
                         const vlessConfig = getVLESSConfig(userID, request.headers.get('Host'));
                         return new Response(`${vlessConfig}`, {
                             status: 200,
