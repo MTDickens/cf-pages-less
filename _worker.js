@@ -756,9 +756,9 @@ function getVLESSConfig(userID, hostName) {
   <title>My CC98, My Home</title>
 </head>
 <body>
-  <h1>My CC98, My Home :)</h1>
+  <h1>My CC98, My Home : )</h1>
   <img src="https://raw.githubusercontent.com/MTDickens/cf-pages-less/main/ac13.jpg" alt="acfun">
-  <p><strong>以下提供两个链接。Clash 不能直接用。一般人无需在意 TLS，选速度较快的就好</strong></p>
+  <p><strong>以下提供两个链接，复制粘贴到你的客户端使用（注意 Clash 用不了）。一般人无需在意 TLS，选速度较快的就好</strong></p>
   <ul>
     <li>速度较快，无 TLS：<a href="${vlessTlsLink}">${vlessTlsLink}</a></li>
     <li>速度较慢，有 TLS：<a href="${vlessLink}">${vlessLink}</a></li>
