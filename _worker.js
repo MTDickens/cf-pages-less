@@ -749,7 +749,12 @@ function getVLESSConfig(userID, hostName) {
     const vlessLink = `vless://${userID}@${hostName}:80?encryption=none&security=none&fp=randomized&type=ws&host=${hostName}&path=%2F%3Fed%3D2048#${hostName}`
     const vlessTlsLink = `vless://4ce1cb33-7a82-4421-b7c5-ec6afd24453f@ao.com:80?security=&fp=randomized&type=ws&path=/?ed%3D2048&host=cc98myhome.zdbkkdbz.workers.dev&encryption=none#cc98myhome.zdbkkdbz.workers.dev`
     return `
-速度较慢，有 TLS：${vlessLink}
-速度较快，无 TLS：${vlessTlsLink}
+My CC98, My Home : )
+<img src="https://img4.nga.178.com/ngabbs/post/smile/ac0.png" alt="acfun">
+<b>以下提供两个链接。Clash 不能直接用。一般人无需在意 TLS，选速度较快的就好</b>
+<ul>
+  <li>速度较快，无 TLS：${vlessTlsLink}</li>
+  <li>速度较慢，有 TLS：${vlessLink}</li>
+</ul>
 `;
 }
