@@ -844,51 +844,58 @@ function getVLESSConfig(userID, hostName) {
   return `
 <!DOCTYPE html>
 <html>
-<head>
-  <title>My CC98, My Home</title>
-    <style>
-        .copy-button {
-            padding: 5px 10px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-    </style>
-</head>
-<body>
-  <h1>My CC98, My Home : )</h1>
-  <img src="https://raw.githubusercontent.com/MTDickens/cf-pages-less/main/ac13.jpg" alt="acfun">
-  <p><strong>以下提供两个链接，复制粘贴到你的客户端使用（注意 Clash 用不了）。一般人无需在意 TLS，选速度较快的就好</strong></p>
-  <ul>
-  <li>速度较快，无 TLS：<a id="link1" href="vless://4ce1cb33-7a82-4421-b7c5-ec6afd24453f@ao.com:80?security=&fp=randomized&type=ws&path=/?ed%3D2048&host=cc98myhome.zdbkkdbz.workers.dev&encryption=none#cc98myhome.zdbkkdbz.workers.dev">点击这里复制链接</a></li>
-  <li>速度较慢，有 TLS：<a id="link2" href="vless://4ce1cb33-7a82-4421-b7c5-ec6afd24453f@zdbkkdbz.pages.dev:80?encryption=none&security=none&fp=randomized&type=ws&host=zdbkkdbz.pages.dev&path=%2F%3Fed%3D2048#zdbkkdbz.pages.dev">点击这里复制链接</a></li>
-</ul>
-
-<script>
-  function copyToClipboard(text) {
-      var tempInput = document.createElement("input");
-      tempInput.value = text;
-      document.body.appendChild(tempInput);
-      tempInput.select();
-      document.execCommand("copy");
-      document.body.removeChild(tempInput);
-
-      alert("已复制到剪贴板！");
-  }
-
-  document.getElementById("link1").addEventListener("click", function(event) {
-      event.preventDefault();
-      var link = this.getAttribute("href");
-      copyToClipboard(link);
-  });
-
-  document.getElementById("link2").addEventListener("click", function(event) {
-      event.preventDefault();
-      var link = this.getAttribute("href");
-      copyToClipboard(link);
-  });
-</script>
-</body>
+    <head>
+        <title>My CC98, My Home</title>
+        <style>
+            .copy-button {
+                padding: 5px 10px;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>My CC98, My Home : )</h1>
+        <img src="https://raw.githubusercontent.com/MTDickens/cf-pages-less/main/ac13.jpg" alt="acfun">
+        <p>
+            <strong>以下提供两个链接，复制粘贴到你的客户端使用（注意 Clash 用不了）。一般人无需在意 TLS，选速度较快的就好</strong>
+        </p>
+        <ul>
+            <li>速度较快，无 TLS： <a id="link1" href="vless://4ce1cb33-7a82-4421-b7c5-ec6afd24453f@ao.com:80?security=&fp=randomized&type=ws&path=/?ed%3D2048&host=cc98myhome.zdbkkdbz.workers.dev&encryption=none#cc98myhome.zdbkkdbz.workers.dev">点击这里复制链接</a>
+            </li>
+            <li>速度较慢，有 TLS： <a id="link2" href="vless://4ce1cb33-7a82-4421-b7c5-ec6afd24453f@zdbkkdbz.pages.dev:80?encryption=none&security=none&fp=randomized&type=ws&host=zdbkkdbz.pages.dev&path=%2F%3Fed%3D2048#zdbkkdbz.pages.dev">点击这里复制链接</a>
+            </li>
+        </ul>
+        <p>另外，可以在 <a href="http://ip.flares.cloud/whole/">ip.flares.cloud</a> 网站 "Select All" 然后 "Test Respond"，获得每一个 ip 对应的 Colo ("属地")。然后用上面的 ip 替换节点的地址 <strong>（注意伪装域名不要改！）</strong>。这样就能够随心所欲切换节点的 ip 所属国家了。 </p>
+        <p><strong>注意：</strong></p>
+        <ol>
+            <li>不改 ip 时，默认大概率是 hk 或 cn。</li>
+            <li>这个地址 <a href="https://cloudflare.cfgo.cc">https://cloudflare.cfgo.cc</a> 貌似教育网是新加坡，可以试试 </li>
+            <li>访问套了 cloudflare cdn 的网站时，实际国家和节点所属国家可能不一致）</li>
+        </ol>
+        <script>
+            function copyToClipboard(text) {
+                var tempInput = document.createElement("input");
+                tempInput.value = text;
+                document.body.appendChild(tempInput);
+                tempInput.select();
+                document.execCommand("copy");
+                document.body.removeChild(tempInput);
+                alert("已复制到剪贴板！");
+            }
+            document.getElementById("link1").addEventListener("click", function(event) {
+                event.preventDefault();
+                var link = this.getAttribute("href");
+                copyToClipboard(link);
+            });
+            document.getElementById("link2").addEventListener("click", function(event) {
+                event.preventDefault();
+                var link = this.getAttribute("href");
+                copyToClipboard(link);
+            });
+        </script>
+    </body>
 </html>`;
 }
