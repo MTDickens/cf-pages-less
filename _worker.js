@@ -872,7 +872,7 @@ function getVLESSConfig(userID, hostName) {
         <p><strong>注意：</strong></p>
         <ol>
             <li>不改 ip 时，默认大概率是 hk 或 cn。</li>
-            <li>这个地址 <a href="https://cloudflare.cfgo.cc">https://cloudflare.cfgo.cc</a> 貌似教育网是新加坡，可以试试 </li>
+            <li>这个 ip <a href="2606:4700:85d5:4c87:6a8e:aecd:8f47:8a59">2606:4700:85d5:4c87:6a8e:aecd:8f47:8a59</a> 貌似教育网是新加坡，可以试试 </li>
             <li>访问套了 cloudflare cdn 的网站时，实际国家和节点所属国家可能不一致）</li>
         </ol>
         <script>
