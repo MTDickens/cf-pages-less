@@ -871,6 +871,7 @@ function getVLESSConfig(userID, hostName) {
         <p>另外，可以在 <a href="http://ip.flares.cloud/whole/">ip.flares.cloud</a> 网站 "Select All" 然后 "Test Respond"，获得每一个 ip 对应的 Colo ("属地")。然后用上面的 ip 替换节点的地址 <strong>（注意伪装域名不要改！）</strong>。这样就能够随心所欲切换节点的 ip 所属国家了。 </p>
         <p><strong>注意：</strong></p>
         <ol>
+            <li>除了教育网以外，国内三大运营商大概率都比较慢，需要优选节点，具体方法自行谷歌搜索。</li>
             <li>不改 ip 时，默认大概率是 hk 或 cn。</li>
             <li>这个 ip <a href="2606:4700:85d5:4c87:6a8e:aecd:8f47:8a59">2606:4700:85d5:4c87:6a8e:aecd:8f47:8a59</a> 貌似教育网是新加坡，可以试试 </li>
             <li>访问套了 cloudflare cdn 的网站时，实际国家和节点所属国家可能不一致）</li>
